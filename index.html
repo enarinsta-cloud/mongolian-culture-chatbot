@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モンゴル文化チャットボット</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-horse"></i>
+                </div>
+                <div>
+                    <h1>モンゴル文化チャットボット</h1>
+                    <div class="subtitle">モンゴルの伝統・文化・歴史について何でも聞いてください</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="chat-container" id="chat-container">
+            <div class="message bot-message">
+                <div class="message-header">
+                    <div class="bot-icon">
+                        <i class="fas fa-horse-head"></i>
+                    </div>
+                    <span>モンゴル文化アシスタント</span>
+                </div>
+                こんにちは ノミンです！モンゴルの文化、伝統、歴史についての質問にお答えします。どんなことが知りたいですか？
+            </div>
+            
+            <div class="typing-indicator" id="typing-indicator">
+                <div class="typing-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="suggestions">
+            <button class="suggestion-btn" data-question="モンゴルの伝統的な食べ物は？">モンゴルの伝統的な食べ物は？</button>
+            <button class="suggestion-btn" data-question="ナーダム祭りについて教えて">ナーダム祭りについて教えて</button>
+            <button class="suggestion-btn" data-question="ゲルとは何ですか？">ゲルとは何ですか？</button>
+            <button class="suggestion-btn" data-question="チンギス・ハンについて">チンギス・ハンについて</button>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="モンゴル文化について質問...">
+            <button id="send-button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
